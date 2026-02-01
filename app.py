@@ -5,7 +5,7 @@ app = Flask(__name__)
 FLAG = "FLAG{inspect_before_trust}"
 
 @app.route("/", methods=["GET", "POST"])
-def index():
+def home():
     message = ""
     if request.method == "POST":
         if request.form.get("flag") == FLAG:
