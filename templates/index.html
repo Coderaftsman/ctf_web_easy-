@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CTF | Web Easy</title>
+    <style>
+        body {
+            background: #020617;
+            color: #e5e7eb;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 80px;
+        }
+        .card {
+            background: #0f172a;
+            width: 420px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #000;
+        }
+        input, button {
+            width: 90%;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .hint {
+            color: #93c5fd;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2>🔐 Web Security – Easy</h2>
+    <p><b>Challenge:</b> Hidden Layers</p>
+
+    <p>
+        Everything you see is not everything that exists.
+    </p>
+
+   
+    <!-- Step 1 done? Inspect the form -->
+
+    <form method="POST">
+        <input type="hidden" value="RkxBR3tpbnNwZWN0X2JlZm9yZV90cnVzdH0=">
+        <input type="text" name="flag" placeholder="Enter flag here" required>
+        <button type="submit">Submit Flag</button>
+    </form>
+
+    <p style="color:red;">{{ message }}</p>
+</div>
+
+</body>
+</html>
